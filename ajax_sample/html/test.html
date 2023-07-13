@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人財管理システム</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body class="body-login">
+    {% csrf_token %}
+    <div id="formBody"></div>
+    <script src="{% static "frontend/main.js" %}"></script>
+</body>
+</html>
